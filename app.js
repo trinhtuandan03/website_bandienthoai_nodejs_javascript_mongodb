@@ -1,13 +1,12 @@
 var express = require("express");
 var app = express();
-const connectDB = require("./backend/config/database");
-connectDB();
+
 
 // Cấu hình views và static files
 app.set("views", __dirname + "/frontend/src/views");
 app.set("view engine", "ejs");
 // ✅ Cấu hình đúng đường dẫn đến static files
-app.use("/static", express.static(__dirname + "/public"));
+app.use("/static", express.static(__dirname + "/frontend/public"));
 
 // Import controller
 var controller = require(__dirname + "/frontend/src/controllers");
