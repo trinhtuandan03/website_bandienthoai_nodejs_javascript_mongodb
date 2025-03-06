@@ -44,7 +44,6 @@ router.get("/getuserlist", async(req, res) => {
     }
 });
 
-
 /**
  * @swagger
  * /adduser:
@@ -99,3 +98,7 @@ router.post("/adduser", async(req, res) => {
 });
 
 module.exports = router;
+
+
+
+//Nguyen Van Duc - 20-10-2003
